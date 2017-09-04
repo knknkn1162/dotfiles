@@ -62,19 +62,6 @@ nnoremap sL <C-w>L
 nnoremap sH <C-w>H
 nnoremap sr <C-w>r
 
-" カレントウィンドウの大きさを変える
-" 幅を増やす
-"call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
-"call submode#map('bufmove', 'n', '', '>', '<C-w>>')
-" 幅を減らす
-"call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
-"call submode#map('bufmove', 'n', '', '<', '<C-w><')
-"高さを増やす
-"call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
-"call submode#map('bufmove', 'n', '', '+', '<C-w>+')
-"高さを減らす
-"call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
-"call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 " 大きさを揃える
 nnoremap s= <C-w>=
 " 縦横最大化
@@ -87,7 +74,7 @@ nnoremap sn gt
 " 前のタブに切り替え
 nnoremap sp gT
 
-" ウィンドウを閉じる
+" ウィンドウ、タブを閉じる
 nnoremap sq :<C-u>q<CR>
 " バッファを閉じる
 nnoremap sQ :bd
