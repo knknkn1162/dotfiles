@@ -27,10 +27,6 @@ nnoremap <silent> ciy  ciw<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
 inoremap <C-s> <ESC>:up<CR>a
 inoremap <D-s> <ESC>:up<CR>a
 
-"<ESC>遠いので、別キーを追加設定
-inoremap <C-c> <ESC>
-noremap <C-c> <ESC>
-
 "ノーマルモード時にenterで改行する
 noremap <CR> o<ESC>
 
