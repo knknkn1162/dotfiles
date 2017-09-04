@@ -1,0 +1,29 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+hook_add = '''
+    source ~/.config/nvim/plugins/rc/airline.vim
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  source ~/.config/nvim/plugins/rc/nerdtree.vim
+    nnoremap <Space>f :<C-u>NERDTreeToggle<CR>
+    let NERDTreeIgnore=['\.pyc$']
+'''
+
+[[plugins]]
+repo = 'kana/vim-submode'
+hook_add = '''
+  source ~/.config/nvim/plugins/rc/submode.vim
+'''

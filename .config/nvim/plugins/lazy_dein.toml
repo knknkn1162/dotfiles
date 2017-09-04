@@ -1,0 +1,39 @@
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml' # If it is matched to 'filetype', dein will call
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+on_event='InsertEnter'
+on_ft = ['snippet']
+depends=['neosnippet-snippets']
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/neosnippet.vim
+'''
+
+[[plugins]] # awesome Python autocompletion with VIM
+repo = 'zchee/deoplete-jedi'
+on_ft = 'python'
+on_event = 'InsertEnter'
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/deoplete-jedi.vim
+'''
+
+
+[[plugins]]
+repo   = 'Shougo/unite.vim'
+
+[[plugins]]
+repo      = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_event = 'InsertCharPre' # see autocmd#autocmd-events-abc
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/deoplete.vim
+''' 
+
+[[plugins]]
+repo = 'jmcantrell/vim-virtualenv'
+on_ft = ['python']
