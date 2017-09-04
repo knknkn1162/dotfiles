@@ -1,4 +1,4 @@
-:"dein Scripts-----------------------------
+"dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
 endif
