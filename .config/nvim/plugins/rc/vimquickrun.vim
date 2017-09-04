@@ -8,14 +8,13 @@ let g:quickrun_config = {
         \ 'outputter/error/success' : 'buffer',
         \ 'outputter/error/error'   : 'quickfix',
         \ 'outputter/buffer/split' : ':botright 8sp',
+        \ 'hook/time/enable' : 1,
     \ }
 \}
 
 " Close quickfix is [q]
 
-augroup MyQuickFixClose
-    au FileType qf nnoremap <silent><buffer>q :quit<CR>
-augroup END
+autocmd FileType qf nnoremap <silent><buffer>q :quit<CR>
 
 " Keymap
 let g:quickrun_no_default_key_mappings = 1
