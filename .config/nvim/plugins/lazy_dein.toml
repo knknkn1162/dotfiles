@@ -19,14 +19,6 @@ hook_source = '''
   source ~/.config/nvim/plugins/rc/deoplete-jedi.vim
 '''
 
-
-[[plugins]]
-repo   = 'Shougo/unite.vim'
-
-[[plugins]]
-repo      = 'Shougo/neomru.vim'
-on_source = ['unite.vim']
-
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 on_event = 'InsertCharPre' # see autocmd#autocmd-events-abc
@@ -52,3 +44,14 @@ on_event = ['BufWritePost', 'BufEnter']
 hook_source = '''
   let g:neomake_python_enabled_makers = ['python', 'flake8', 'mypy']
 '''
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+depends = 'neomru.vim'
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/unite.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_path = '.*'
