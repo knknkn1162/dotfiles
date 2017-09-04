@@ -39,12 +39,6 @@ repo = 'jmcantrell/vim-virtualenv'
 on_ft = ['python']
 
 [[plugins]]
-repo = 'Shougo/vimproc.vim'
-hook_post_update = '''
-  source ~./config/nvim/plugins/rc/vimproc.vim
-'''
-
-[[plugins]]
 repo = 'thinca/vim-quickrun'
 depends = ['vimproc.vim']
 on_ft = ['python']

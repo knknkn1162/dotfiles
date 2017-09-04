@@ -27,3 +27,7 @@ repo = 'kana/vim-submode'
 hook_add = '''
   source ~/.config/nvim/plugins/rc/submode.vim
 '''
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make' # I have to exec make command in ~/.cache/dein/repos/github.com/Shougo/vimproc.vim dir?? 
