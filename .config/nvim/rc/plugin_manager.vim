@@ -37,7 +37,7 @@ endif
 filetype plugin indent on
 
 " If you want to install not installed plugins on startup.
-if has('vim_starting') && dein#check_install()
+if dein#check_install()
   call dein#install()
 endif
 
