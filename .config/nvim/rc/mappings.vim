@@ -25,7 +25,7 @@ vnoremap <silent> cy  c<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
 nnoremap <silent> ciy  ciw<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
 " insert modeで<Ctrl-s>保存できるようにする
 inoremap <C-s> <ESC>:up<CR>a
-inoremap <D-s> <ESC>:up<CR>a
+nnoremap <C-s> <ESC>:up<CR>
 
 "ノーマルモード時にenterで改行する
 noremap <CR> o<ESC>
