@@ -1,2 +1,3 @@
 "filetypes.vim
-"ファイルタイプに関係する設定
+" ファイルタイプ検出と、ファイルタイププラグインとインデントプラグインをオンにする設定
+filetype plugin indent on
