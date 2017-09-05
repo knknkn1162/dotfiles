@@ -56,7 +56,7 @@ hook_source = '''
 repo = 'Shougo/neomru.vim'
 on_path = '.*'
 
-[[plugin]]
+[[plugins]]
 repo = 'scrooloose/nerdcommenter'
 on_path = '.*'
 hook_source = '''
