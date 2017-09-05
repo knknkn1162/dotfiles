@@ -29,7 +29,6 @@ inoremap <D-s> <ESC>:up<CR>a
 
 "ノーマルモード時にenterで改行する
 noremap <CR> o<ESC>
-
 "ビジュアルモードでインデント変更後に再選択
 vnoremap <  <gv
 vnoremap >  >gv
@@ -53,6 +52,21 @@ nnoremap sk <C-w>k
 nnoremap sl <C-w>l
 nnoremap sh <C-w>h
 nnoremap sw <C-w>w
+" 次に移動する
+nnoremap sn <C-w>w
+" ウィンドウ or タブを閉じる
+nnoremap sq :<C-u>q<CR>
+
+" buffer settings
+nnoremap bd :<C-u>bd<CR>
+nnoremap bf :<C-u>bf<CR>
+nnoremap bl :<C-u>bl<CR>
+" 次のバッファに移動する
+nnoremap bn :<C-u>bn<CR>
+" 前のバッファに移動する
+nnoremap bp :<C-u>bp<CR>
+" バッファを終了する (bdと同じ)
+nnoremap bq :<C-u>bd<CR>
 
 " カーソルがあるウィンドウを左, 下, 上, 右方向に移動する
 " r: rotate
@@ -68,14 +82,9 @@ nnoremap s= <C-w>=
 nnoremap so <C-w>_<C-w>|
 
 " 新規タブ
-nnoremap st :<C-u>tabnew<CR>
+"nnoremap st :<C-u>tabnew<CR>
 " 次のタブに切り替え
-nnoremap sn gt
+"nnoremap sn gt
 " 前のタブに切り替え
-nnoremap sp gT
-
-" ウィンドウ、タブを閉じる
-nnoremap sq :<C-u>q<CR>
-" バッファを閉じる
-nnoremap sQ :bd
+"nnoremap sp gT
 
