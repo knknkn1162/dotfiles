@@ -5,5 +5,5 @@ let g:NERDSpaceDelims = 1
 " enable normal mode & visual mode
 nmap ,/ <Plug>NERDCommenterToggle
 vmap ,/ <Plug>NERDCommenterToggle
-nmap ,/a <Plug>NERDCommenterAppend
-vmap ,/s <Plug>NERDCommenterSexy
+nmap ,a <Plug>NERDCommenterAppend
+vmap ,s <Plug>NERDCommenterSexy

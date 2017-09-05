@@ -58,7 +58,8 @@ on_path = '.*'
 
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
-on_path = '.*'
+# doesn't work if use on_path = '.*'
+on_ft = ['python', 'go', 'scala']
 hook_source = '''
   source ~/.config/nvim/plugins/rc/nerdcommenter.vim
 '''
