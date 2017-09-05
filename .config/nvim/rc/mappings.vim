@@ -33,6 +33,9 @@ noremap <CR> o<ESC>
 vnoremap <  <gv
 vnoremap >  >gv
 
+" dein update
+nmap du :call dein#update()<CR>:
+
 
 "-------------------
 "tabs & windows settings
