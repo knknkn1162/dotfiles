@@ -65,7 +65,9 @@ set matchpairs& matchpairs+=<:>
 set spelllang=en,cjk
 "ファイルを開いた時に，カーソル位置を最後にカーソルがあった位置まで移動
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-"}}}
+" bufferを切り替える時に編集中ファイルを保存しなくても良くなる機能
+set hidden
+
 
 "----------------------
 "表示関係
