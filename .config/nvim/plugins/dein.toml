@@ -31,3 +31,8 @@ hook_add = '''
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make' # I have to exec make command in ~/.cache/dein/repos/github.com/Shougo/vimproc.vim dir?? 
+
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
