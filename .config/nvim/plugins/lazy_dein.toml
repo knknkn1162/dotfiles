@@ -39,10 +39,10 @@ hook_source = '''
 '''
 
 [[plugins]]
-repo = 'neomake/neomake'
-on_event = ['BufWritePost', 'BufEnter']
+repo = 'w0rp/ale'
+on_ft = ['python', 'javascript', 'scala', 'html', 'css', 'markdown']
 hook_source = '''
-  let g:neomake_python_enabled_makers = ['python', 'flake8', 'mypy']
+  source ~/.config/nvim/plugins/rc/ale.vim
 '''
 
 [[plugins]]
