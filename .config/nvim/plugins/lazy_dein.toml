@@ -40,7 +40,7 @@ hook_source = '''
 
 [[plugins]]
 repo = 'w0rp/ale'
-on_ft = ['python', 'javascript', 'scala', 'html', 'css', 'markdown']
+on_ft = ['python', 'ruby', 'javascript', 'scala', 'html', 'css', 'markdown']
 hook_source = '''
   source ~/.config/nvim/plugins/rc/ale.vim
 '''
@@ -63,3 +63,19 @@ on_ft = ['python', 'go', 'scala']
 hook_source = '''
   source ~/.config/nvim/plugins/rc/nerdcommenter.vim
 '''
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = ['python', 'ruby']
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
