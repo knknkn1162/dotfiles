@@ -45,9 +45,9 @@ nmap du :call dein#update()<CR>:
 " disable s command to use otherwise
 nnoremap s <Nop>
 " split windows horizontally
-nnoremap ss :<C-u>sp<CR>
+" nnoremap ss :<C-u>sp<CR>
 " split windows vertically
-nnoremap sv :<C-u>vs<CR>
+nnoremap ss :<C-u>vs<CR>
 
 " move cursor on multiple windows
 " j:bottom h:left k:top l:right
@@ -58,8 +58,8 @@ nnoremap sh <C-w>h
 nnoremap sw <C-w>w
 " 次に移動する
 nnoremap sn <C-w>w
-" 前のウィンドウに移動する
-nnoremap sp <C-w>W
+" 前に移動する
+nnoremap sp <C-w><C-p>
 " ウィンドウ or タブを閉じる
 nnoremap sq :<C-u>q<CR>
 nnoremap qq :<C-u>q<CR>
