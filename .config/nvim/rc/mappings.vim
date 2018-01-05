@@ -23,12 +23,13 @@ nnoremap ,rv :source $HOME/.vimrc<CR>
 nnoremap <silent> cy  ce<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
 vnoremap <silent> cy  c<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
 nnoremap <silent> ciy  ciw<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
-" insert modeで<Ctrl-s>保存できるようにする
-inoremap <C-s> <ESC>:<C-u>up<CR>a
+" insert modeで<Command-s>保存できるようにする
+inoremap <C-s> <ESC>:<C-u>up<CR>
 nnoremap <C-s> <ESC>:<C-u>up<CR>
 
 "ノーマルモード時にenterで改行する
 noremap <CR> o<ESC>
+inoremap <C-]> <ESC>
 "ビジュアルモードでインデント変更後に再選択
 vnoremap <  <gv
 vnoremap >  >gv
@@ -57,8 +58,11 @@ nnoremap sh <C-w>h
 nnoremap sw <C-w>w
 " 次に移動する
 nnoremap sn <C-w>w
+" 前のウィンドウに移動する
+nnoremap sp <C-w>W
 " ウィンドウ or タブを閉じる
 nnoremap sq :<C-u>q<CR>
+nnoremap qq :<C-u>q<CR>
 
 " buffer settings
 nnoremap bd :<C-u>bd<CR>
@@ -66,6 +70,7 @@ nnoremap bf :<C-u>bf<CR>
 nnoremap bl :<C-u>bl<CR>
 " 次のバッファに移動する
 nnoremap bn :<C-u>bn<CR>
+inoremap <C-b> <ESC>:<C-u>bn<CR>a
 " 前のバッファに移動する
 nnoremap bp :<C-u>bp<CR>
 " バッファを終了する (bdと同じ)
