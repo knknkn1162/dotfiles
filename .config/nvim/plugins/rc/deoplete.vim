@@ -44,7 +44,8 @@ endfunction
 
 inoremap <expr><CR>  pumvisible() ? deoplete#close_popup() : "<CR>"
 
-inoremap <expr> '  pumvisible() ? deoplete#close_popup() : "'"
+" deplecated due to mattn/emmet-vim
+" inoremap <expr> '  pumvisible() ? deoplete#close_popup() : "'"
 
 " customs
 " set ghc
