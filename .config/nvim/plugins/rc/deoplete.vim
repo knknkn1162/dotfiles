@@ -42,10 +42,12 @@ function! s:my_cr_function() abort
   return deoplete#cancel_popup() . "\<CR>"
 endfunction
 
-inoremap <expr><CR>  pumvisible() ? deoplete#close_popup() : "<CR>"
+
 
 " deplecated due to mattn/emmet-vim
-" inoremap <expr> '  pumvisible() ? deoplete#close_popup() : "'"
+" pumvisible() ? deoplete#close_popup() : "
+
+"" inoremap <expr> '  pumvisible() ? deoplete#close_popup() : "'"
 
 " customs
 " set ghc
