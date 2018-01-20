@@ -29,6 +29,7 @@ hook_source = '''
 [[plugins]]
 repo = 'fishbullet/deoplete-ruby'
 on_ft = ['ruby']
+on_event = 'InsertEnter'
 
 [[plugins]]
 repo = 'jmcantrell/vim-virtualenv'
@@ -44,7 +45,8 @@ hook_source = '''
 
 [[plugins]]
 repo = 'w0rp/ale'
-on_ft = ['python', 'ruby', 'javascript', 'scala', 'html', 'css', 'markdown']
+on_ft = ['python', 'ruby', 'javascript', 'erb', 'scala', 'html', 'css', 'markdown']
+on_event = 'InsertEnter'
 hook_source = '''
   source ~/.config/nvim/plugins/rc/ale.vim
 '''
@@ -64,32 +66,32 @@ on_path = '.*'
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
 # doesn't work if use on_path = '.*'
-on_ft = ['python', 'go', 'scala', 'ruby']
+on_ft = ['python', 'go', 'scala', 'ruby', 'toml', 'vim']
 hook_source = '''
   source ~/.config/nvim/plugins/rc/nerdcommenter.vim
 '''
 
 [[plugins]]
 repo = 'tpope/vim-endwise'
-on_i = 1
+on_event = 'InsertEnter'
 
 [[plugins]]
 repo = 'jiangmiao/auto-pairs'
-on_i = 1
+on_event = 'InsertEnter'
 
 [[plugins]]
 repo = 'Townk/vim-autoclose'
-on_i = 1
+on_event = 'InsertEnter'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_i = 1
+on_event = 'InsertEnter'
 
 [[plugins]]
 repo = 'tpope/vim-rails'
-on_i = 1
+on_event = 'InsertEnter'
 on_ft = ['ruby']
 
 [[plugins]]
 repo = 'tpope/vim-surround'
-on_i = 1
+on_event = 'InsertEnter'
