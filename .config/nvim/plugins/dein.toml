@@ -1,8 +1,8 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
+#[[plugins]]
+#repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
@@ -35,5 +35,4 @@ build = 'make' # I have to exec make command in ~/.cache/dein/repos/github.com/S
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
-
 
