@@ -36,9 +36,4 @@ build = 'make' # I have to exec make command in ~/.cache/dein/repos/github.com/S
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
-[[plugins]]
-repo = 'tpope/vim-rails'
-
-[[plugins]]
-repo = 'tpope/vim-surround'
 
