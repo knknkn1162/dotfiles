@@ -36,18 +36,19 @@ inoremap <expr><C-g> deoplete#undo_comcletion()
 " <C-l>: redraw candidates
 "inoremap <expr><C-l> deoplete#refresh()
 
+" deplicated due to vim-endwise
 " <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function() abort
-  return deoplete#cancel_popup() . "\<CR>"
-endfunction
+" inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+" function! s:my_cr_function() abort
+  " return deoplete#cancel_popup() . \<CR>"
+" endfunction
 
 
 
-" deplecated due to mattn/emmet-vim
+" deplicated due to mattn/emmet-vim
 " pumvisible() ? deoplete#close_popup() : "
-
-"" inoremap <expr> '  pumvisible() ? deoplete#close_popup() : "'"
+" inoremap <expr><CR>  pumvisible() ? deoplete#close_popup() : <CR>"
+" inoremap <expr> '  pumvisible() ? deoplete#close_popup() : '"
 
 " customs
 " set ghc
