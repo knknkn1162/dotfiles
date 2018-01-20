@@ -18,8 +18,6 @@ repo = 'vim-airline/vim-airline-themes'
 repo = 'scrooloose/nerdtree'
 hook_add = '''
   source ~/.config/nvim/plugins/rc/nerdtree.vim
-    nnoremap <Space>f :<C-u>NERDTreeToggle<CR>
-    let NERDTreeIgnore=['\.pyc$']
 '''
 
 [[plugins]]

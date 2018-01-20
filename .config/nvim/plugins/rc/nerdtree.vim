@@ -7,3 +7,5 @@ let g:NERDTreeDirArrowExpandable  = '▶'
 let g:NERDTreeDirArrowCollapsible = '▼'
 
 let NERDTreeIgnore=['\.pyc$']
+
+autocmd bufenter * if (exists("b:NERDTree") && b:NERDTree.isTabTree()) | bd | endif
