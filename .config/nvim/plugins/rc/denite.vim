@@ -15,4 +15,4 @@ call denite#custom#map('_', '<C-p>', '<denite:do_action:preview>')
 " see also https://github.com/Shougo/denite.nvim/blob/5bb925df42e7e6bd9554a44a3cfefdfe44ba958c/doc/denite.txt#L2145
 call denite#custom#source('grep', 'args', ['', '', '!'])
 nmap <silent> <C-w> :<C-u>Denite file_rec -highlight-mode-insert=Search -winheight=10<CR>
-nmap <silent> <C-g> :<C-u>Denite grep -highlight-mode-insert=Search -auto-preview -winheight=7<CR>
+nmap <silent> <C-g> :<C-u>Denite grep -highlight-mode-insert=Search -winheight=20<CR>
