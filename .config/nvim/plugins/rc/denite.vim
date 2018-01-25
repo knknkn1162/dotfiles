@@ -16,3 +16,4 @@ call denite#custom#map('_', '<C-p>', '<denite:do_action:preview>')
 call denite#custom#source('grep', 'args', ['', '', '!'])
 nmap <silent> <C-w> :<C-u>Denite file_rec -highlight-mode-insert=Search -winheight=10<CR>
 nmap <silent> <C-g> :<C-u>Denite grep -highlight-mode-insert=Search -winheight=20<CR>
+nmap <silent> bl :<C-u>Denite buffer -highlight-mode-insert=Search -winheight=15 -mode=normal<CR>
