@@ -1,6 +1,5 @@
 export PYENV_ROOT="${HOME}/.pyenv"
 export PATH="${PYENV_ROOT}/bin:$PATH"
-eval "$(pyenv init -)"
 
 # The next line updates PATH for the Google Cloud SDK.
 # if [ -f '/Users/kenta_nakajima/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/kenta_nakajima/Downloads/google-cloud-sdk/path.bash.inc'; fi
@@ -17,5 +16,3 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PGDATA=/usr/local/var/postgres
-
-eval "$(rbenv init -)"

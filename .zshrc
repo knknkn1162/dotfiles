@@ -1,3 +1,8 @@
+# Load rbenv automatically by appending
+# the following to ~/.zshrc:
+eval "$(rbenv init -)"
+
+
 # see https://gist.github.com/mollifier/4979906.
 # 環境変数
 export LANG=ja_JP.UTF-8
@@ -135,6 +140,7 @@ elif which putclip >/dev/null 2>&1 ; then
     # Cygwin
     alias -g C='| putclip'
 fi
+
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
