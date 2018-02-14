@@ -10,7 +10,7 @@
 !/.gitignore
 !/.zshrc
 !/.zprofile
-!/.zplug/
+!/.zplug/init.zsh
 
 # 上記に"無視したくないファイル"としてリスト化した中から、さらに"無視したいファイル"を指定
 /.config/fontforge
