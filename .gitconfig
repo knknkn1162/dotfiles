@@ -1,0 +1,9 @@
+[user]
+  name = knknkn
+  email = knknkn1162@gmail.com
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
