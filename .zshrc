@@ -3,6 +3,8 @@ alias vim='nvim'
 # the following to ~/.zshrc:
 eval "$(rbenv init -)"
 
+# local configration
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 # see https://gist.github.com/mollifier/4979906.
 # 環境変数
