@@ -35,9 +35,6 @@ inoremap <C-]> <ESC>
 vnoremap <  <gv
 vnoremap >  >gv
 
-" dein update
-nmap du :call dein#update()<CR>:
-
 
 "-------------------
 "tabs & windows settings
@@ -98,9 +95,9 @@ nnoremap so <C-w>_<C-w>|
 "nnoremap sp gT
 
 " 閉じタグを補完
-augroup MyXML
-  autocmd!
-  autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
-  autocmd Filetype html inoremap <buffer> </ </<C-x><C-o>
-  autocmd Filetype eruby inoremap <buffer> </ </<C-x><C-o>
-augroup END
+" augroup MyXML
+  " autocmd!
+  " autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
+  " autocmd Filetype html inoremap <buffer> </ </<C-x><C-o>
+  " autocmd Filetype eruby inoremap <buffer> </ </<C-x><C-o>
+" augroup END
