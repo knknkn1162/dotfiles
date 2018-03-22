@@ -2,6 +2,7 @@
   name = knknkn
   email = knknkn1162@gmail.com
 [alias]
+  adf = diff --cached
   st = status
   ci = commit
   co = checkout
