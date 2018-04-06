@@ -24,6 +24,13 @@ call denite#custom#var('grep', 'final_opts', [])
 " the 2nd argument '!' expresses the grep interactive mode.
 " see also https://github.com/Shougo/denite.nvim/blob/5bb925df42e7e6bd9554a44a3cfefdfe44ba958c/doc/denite.txt#L2145
 call denite#custom#source('grep', 'args', ['', '', '!'])
-nmap <silent> <C-p> :<C-u>Denite file_rec -highlight-mode-insert=Search -winheight=10<CR>
-nmap <silent> <C-g> :<C-u>Denite grep -highlight-mode-insert=Search -winheight=20<CR>
-nmap <silent> <C-b> :<C-u>Denite buffer -highlight-mode-insert=Search -winheight=15 -mode=normal<CR>
+nmap <silent> <C-u>f :<C-u>Denite file_rec -highlight-mode-insert=Search -winheight=10<CR>
+nmap <silent> <C-u>p :<C-u>Denite grep -highlight-mode-insert=Search -winheight=10 -auto-preview=true<CR>
+nmap <silent> <C-g> :<C-u>Denite grep -highlight-mode-insert=Search -winheight=20 -buffer-name=search-buffer-denite<CR>
+nmap <silent> <C-u>b :<C-u>Denite buffer -highlight-mode-insert=Search -winheight=15 -mode=normal<CR>
+" Denite grep検索結果を再表示する
+nnoremap <silent> <C-u>r :<C-u>Denite -resume -buffer-name=search-buffer-denite<CR>
+" resumeした検索結果の次の行の結果へ飛ぶ
+nnoremap <silent> <C-u><C-n> :<C-u>Denite -resume -buffer-name=search-buffer-denite -select=+1 -immediately<CR>
+" resumeした検索結果の前の行の結果へ飛ぶ
+nnoremap <silent> <C-u><C-p> :<C-u>Denite -resume -buffer-name=search-buffer-denite -select=-1 -immediately<CR>
