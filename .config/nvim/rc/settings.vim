@@ -67,7 +67,8 @@ set spelllang=en,cjk
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 " bufferを切り替える時に編集中ファイルを保存しなくても良くなる機能
 set hidden
-
+" ノーマルモードに戻るときにすぐにpasteモードを脱する
+autocmd InsertLeave * set nopaste
 
 "----------------------
 "表示関係
