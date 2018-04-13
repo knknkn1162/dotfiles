@@ -11,7 +11,6 @@
 [push]
   default = tracking       # defaultのpush先はtrackingしているリポジトリ
 [alias]
-  adf = diff --cached
   st = status
   ci = commit
   co = checkout
@@ -20,6 +19,7 @@
   oneline = log --pretty=oneline
   master = checkout master; git pull
   brn = symbolic-ref --short HEAD
+  sub = git rm --cached
 
   dc = diff --cached
   dm = diff master           # masterとのdiff
