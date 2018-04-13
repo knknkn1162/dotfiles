@@ -1,6 +1,15 @@
 [user]
   name = knknkn
   email = knknkn1162@gmail.com
+[color]
+  # colorの設定(以下のコマンドは自動で色つける)
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+[push]
+  default = tracking       # defaultのpush先はtrackingしているリポジトリ
 [alias]
   adf = diff --cached
   st = status
@@ -8,3 +17,17 @@
   co = checkout
   br = branch
   graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+  oneline = log --pretty=oneline
+  master = checkout master; git pull
+  brn = symbolic-ref --short HEAD
+
+  dc = diff --cached
+  dm = diff master           # masterとのdiff
+  d1 = diff HEAD~            # HEADから1つ前とdiff
+  d2 = diff HEAD~~           # HEADから2つ前とdiff
+  d3 = diff HEAD~~~          # HEADから3つ前とdiff
+  d4 = diff HEAD~~~~         # HEADから4つ前とdiff
+  d5 = diff HEAD~~~~~        # HEADから5つ前とdiff
+  d10 = diff HEAD~~~~~~~~~~  # HEADから10前とdiff
+[merge]
+  tool = vimdiff
