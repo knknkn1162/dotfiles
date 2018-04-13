@@ -12,7 +12,8 @@
   default = simple
 [alias]
   st = status
-  ci = commit
+  com = commit -m
+  amend = commit --amend -m
   co = checkout
   br = branch
   graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
@@ -20,7 +21,8 @@
   master = checkout master; git pull
   brn = symbolic-ref --short HEAD
   sub = git rm --cached
-
+  last = log -1 HEAD
+  rshow = remote show origin
   dc = diff --cached
   dm = diff master           # masterとのdiff
   d1 = diff HEAD~            # HEADから1つ前とdiff
