@@ -1,4 +1,5 @@
 alias vim='nvim'
+alias relogin="exec $SHELL -l"
 alias ctags="`brew --prefix`/bin/ctags"
 # Load rbenv automatically by appending
 # the following to ~/.zshrc:
