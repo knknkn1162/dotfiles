@@ -20,7 +20,7 @@ colors # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-bindkey -v
+bindkey -e
 
 # 単語の区切り文字を指定する
 autoload -Uz select-word-style
