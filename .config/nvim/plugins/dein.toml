@@ -27,6 +27,9 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'kana/vim-operator-user'
+
+[[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make' # I have to exec make command in ~/.cache/dein/repos/github.com/Shougo/vimproc.vim dir?? 
 

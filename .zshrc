@@ -150,7 +150,11 @@ fi
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/kenta_nakajima/.zshrc'
+
+# export PATH
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+# see https://github.com/Homebrew/homebrew-core/issues/17938
+export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # files changed function
 # see the link, http://south37.hatenablog.com/entry/2014/08/17/%E8%A4%87%E6%95%B0%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%B8%80%E6%B0%97%E3%81%ABgrep%E3%81%97%E3%81%9F%E3%82%8A%E6%96%87%E5%AD%97%E5%88%97%E7%BD%AE%E6%8F%9B%E3%81%97%E3%81%9F%E3%82%8A%E3%81%99
