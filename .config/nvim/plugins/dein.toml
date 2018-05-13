@@ -30,6 +30,12 @@ hook_add = '''
 repo = 'kana/vim-operator-user'
 
 [[plugins]]
+repo = 'rhysd/vim-clang-format'
+hook_add = '''
+  source ~/.config/nvim/plugins/rc/vim-clang-format.vim
+'''
+
+[[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make' # I have to exec make command in ~/.cache/dein/repos/github.com/Shougo/vimproc.vim dir?? 
 
