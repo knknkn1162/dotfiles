@@ -34,7 +34,7 @@ on_event = 'InsertEnter'
 [[plugins]]
 repo = 'zchee/deoplete-clang'
 on_event = 'InsertEnter'
-on_ft = ['c', 'cpp']
+on_ft = ['c', 'cpp', 'cmake']
 depends = ['deoplete.nvim']
 hook_source = '''
 let g:deoplete#sources#clang#libclang_path = '/usr/local/Cellar/llvm/6.0.0/lib/libclang.dylib'
@@ -44,7 +44,7 @@ let g:deoplete#sources#clang#clang_header = '/usr/local/opt/llvm/lib/clang'
 [[plugins]]
 repo = 'Shougo/neoinclude.vim'
 on_event = 'InsertEnter'
-on_ft = ['c', 'cpp']
+on_ft = ['c', 'cpp', 'cmake']
 depends = ['deoplete.nvim']
 
 [[plugins]]
@@ -61,7 +61,7 @@ hook_source = '''
 
 [[plugins]]
 repo = 'w0rp/ale'
-on_ft = ['python', 'ruby', 'javascript', 'erb', 'scala', 'html', 'css', 'markdown', 'c', 'cpp']
+on_ft = ['python', 'ruby', 'javascript', 'erb', 'scala', 'html', 'css', 'markdown', 'c', 'cpp', 'cmake']
 on_event = 'InsertEnter'
 hook_source = '''
   source ~/.config/nvim/plugins/rc/ale.vim
