@@ -1,6 +1,9 @@
 alias vim='nvim'
 alias relogin="exec $SHELL -l"
+
+alias vimg='nvim ./README.md'
 alias ctags="`brew --prefix`/bin/ctags"
+alias gitm='git co master; git pull; git br'
 # Load rbenv automatically by appending
 # the following to ~/.zshrc:
 eval "$(rbenv init -)"
