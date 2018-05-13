@@ -16,3 +16,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PGDATA=/usr/local/var/postgres
+
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+# see https://github.com/Homebrew/homebrew-core/issues/17938
+export PATH="/usr/local/opt/llvm/bin:$PATH"
