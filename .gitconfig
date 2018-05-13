@@ -15,6 +15,10 @@
 [merge]
   ff = false # merge with `--no-ff` by default. This always makes merge-commit.
 [alias]
+  m = checkout master
+  an = add $1 -N
+  p = add -p
+  pp = add $1 -p
   st = status
   com = commit -m
   amend = commit --amend -m
