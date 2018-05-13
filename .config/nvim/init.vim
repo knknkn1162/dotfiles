@@ -34,4 +34,4 @@ call s:file_read('filetypes.vim')
 
 " plugin manager (dein.vim)
 call s:file_read('plugin_manager.vim')
-
+execute 'source ' . s:rc_dir . '/' . 'command.vim'
