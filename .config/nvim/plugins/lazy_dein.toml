@@ -37,8 +37,7 @@ on_event = 'InsertEnter'
 on_ft = ['c', 'cpp', 'cmake']
 depends = ['deoplete.nvim']
 hook_source = '''
-let g:deoplete#sources#clang#libclang_path = '/usr/local/Cellar/llvm/6.0.0/lib/libclang.dylib'
-let g:deoplete#sources#clang#clang_header = '/usr/local/opt/llvm/lib/clang'
+  source ~/.config/nvim/plugins/rc/deoplete-clang.vim
 '''
 
 [[plugins]]
