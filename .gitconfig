@@ -32,6 +32,7 @@
   sub = git rm --cached
   last = log -1 HEAD
   rshow = remote show origin
+  df = diff
   dc = diff --cached
   dm = diff master           # masterとのdiff
   d1 = diff HEAD~            # HEADから1つ前とdiff
