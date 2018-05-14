@@ -20,3 +20,4 @@ export PGDATA=/usr/local/var/postgres
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 # see https://github.com/Homebrew/homebrew-core/issues/17938
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/Cellar/openssl/1.0.2o_1/bin/:$PATH"
