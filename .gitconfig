@@ -10,8 +10,6 @@
   grep = auto
 [push]
   default = current
-[pull]
-  ff = only # we can pull only in fast-forward.
 [merge]
   ff = false # merge with `--no-ff` by default. This always makes merge-commit.
 [alias]
