@@ -1,6 +1,6 @@
 [user]
-  name = knknkn
-  email = knknkn1162@gmail.com
+	name = knknkn1162
+	email = knknkn1162@gmail.com
 [color]
   # colorの設定(以下のコマンドは自動で色つける)
   status = auto
@@ -10,8 +10,6 @@
   grep = auto
 [push]
   default = current
-[merge]
-  ff = false # merge with `--no-ff` by default. This always makes merge-commit.
 [alias]
   m = checkout master
   an = add $1 -N
