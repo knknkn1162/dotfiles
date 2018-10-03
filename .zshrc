@@ -5,6 +5,8 @@ alias vimg='nvim ./README.md'
 alias ctags="`brew --prefix`/bin/ctags"
 alias gitm='git co master; git pull; git br'
 alias railsc="docker-compose exec app rails c --sandbox"
+alias ve='source ./venv/bin/activate'
+alias gtk='open -a /Applications/gtkwave.app'
 # Load rbenv automatically by appending
 # the following to ~/.zshrc:
 eval "$(rbenv init -)"
