@@ -11,6 +11,11 @@ alias gtk='open -a /Applications/gtkwave.app'
 # the following to ~/.zshrc:
 eval "$(rbenv init -)"
 
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # local configration
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
