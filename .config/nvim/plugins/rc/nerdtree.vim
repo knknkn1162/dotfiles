@@ -8,3 +8,4 @@ let g:NERDTreeDirArrowCollapsible = '▼'
 
 let NERDTreeIgnore=['\.pyc$']
 
+let NERDTreeNodeDelimiter = "\t"
