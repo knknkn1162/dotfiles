@@ -21,8 +21,7 @@ let g:ale_open_list = 0
 let g:ale_keep_list_window_open = 0
 
 " 有効にするlinter
-au FileType systemverilog
-\ let g:ale_linters = {'systemverilog' : ['verilator'],}
+let g:ale_linters = {'systemverilog' : ['verilator'], 'verilog' : ['verilator'], }
 
 g:ale_verilog_verilator_options = '-sv --default-language "1800-2012"'
 
