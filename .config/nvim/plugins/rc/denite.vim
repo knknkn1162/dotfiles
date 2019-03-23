@@ -26,7 +26,8 @@ call denite#custom#var('grep', 'final_opts', [])
 call denite#custom#source('grep', 'args', ['', '', '!'])
 nmap <silent> <C-u>f :<C-u>Denite file/rec -highlight-mode-insert=Search -winheight=10<CR>
 nmap <silent> <C-u>p :<C-u>Denite grep -highlight-mode-insert=Search -winheight=10 -auto-preview=true<CR>
-nmap <silent> <C-g> :<C-u>Denite grep -highlight-mode-insert=Search -winheight=20 -buffer-name=search-buffer-denite<CR>
+nmap <silent> * :<C-u>Denite grep -highlight-mode-insert=Search -winheight=20 -buffer-name=search-buffer-denite<CR>
+nmap <silent> <C-g> :<C-u>DeniteCursorWord grep -highlight-mode-insert=Search -winheight=20 -buffer-name=search-buffer-denite<CR>
 nmap <silent> <C-u>b :<C-u>Denite buffer -highlight-mode-insert=Search -winheight=15 -mode=normal<CR>
 " Denite grep検索結果を再表示する
 nnoremap <silent> <C-u>r :<C-u>Denite -resume -buffer-name=search-buffer-denite<CR>
