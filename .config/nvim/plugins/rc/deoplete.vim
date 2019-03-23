@@ -52,10 +52,10 @@ inoremap <expr><C-g> deoplete#undo_comcletion()
 
 " customs
 " set ghc
-call deoplete#custom#set('ghc', 'sorters', ['sorter_word'])
+call deoplete#custom#source('ghc', 'sorters', ['sorter_word'])
 
 " Use auto delimiter
-call deoplete#custom#set('_', 'converters', [
+call deoplete#custom#source('_', 'converters', [
       \ 'converter_remove_paren',
       \ 'converter_remove_overlap',
       \ 'converter_truncate_abbr',
