@@ -48,3 +48,10 @@ repo = 'tpope/vim-fugitive'
 hook_add = '''
 source ~/.config/nvim/plugins/rc/fugitive.vim
 '''
+
+
+#[[plugins]]
+#repo = 'vim-scripts/gtags.vim'
+#hook_add = '''
+#source ~/.config/nvim/plugins/rc/gtags.vim
+#'''
