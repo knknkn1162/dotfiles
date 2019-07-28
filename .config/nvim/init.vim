@@ -8,7 +8,7 @@ let s:rc_dir   = s:vim_home . '/rc'
 " set python version properly or The plugin, deoplete could not be loaded.
 " See also https://github.com/Shougo/deoplete.nvim/issues/550
 " after changing this, call :UpdateRemotePlugins, also, confirm by the nvim command, :CheckHealth.
-let g:python3_host_prog = s:home . '/.pyenv/versions/3.6.4/bin/python'
+let g:python3_host_prog = s:home . '/.pyenv/versions/3.7.4/bin/python'
 
 
 "分割したファイルを読み込み
