@@ -24,9 +24,9 @@ set wrapscan
 "{{{
 "tab settings
 "<TAB>を含むファイルを開いた際、<TAB>を何文字の空白に変換するかを設定。
-set tabstop=2
+set tabstop=4
 " キーボードで<TAB>を入力した際、<TAB>を何文字の空白に変換するかを設定。
-set softtabstop=2
+set softtabstop=4
 "vimが自動でインデントを行った際、設定する空白数。
 set shiftwidth=2
 "キーボードで<TAB>を入力した際、<TAB>を空白に自動的に変換する
