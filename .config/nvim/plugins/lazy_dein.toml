@@ -1,0 +1,42 @@
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_event = 'InsertCharPre' # see autocmd#autocmd-events-abc
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/deoplete.vim
+'''
+
+[[plugins]]
+repo = 'w0rp/ale'
+on_ft = ['python', 'ruby', 'javascript', 'erb', 'scala', 'html', 'css', 'markdown', 'c', 'cpp', 'cmake']
+on_event = 'InsertEnter'
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/ale.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+depends = 'neomru.vim'
+on_event = 'BufRead'
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/denite.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_path = '.*'
+
+
+[[plugins]]
+repo = 'scrooloose/nerdcommenter'
+# doesn't work if use on_path = '.*'
+on_ft = ['python', 'go', 'scala', 'ruby', 'toml', 'vim', 'c', 'cpp', 'cmake']
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/nerdcommenter.vim
+'''
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+on_event = 'InsertEnter'
+hook_source = '''
+  source ~/.config/nvim/plugins/rc/surround.vim
+'''

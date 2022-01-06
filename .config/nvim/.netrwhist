@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/knknkn/.config/nvim/rc'
+let g:netrw_dirhist_0='/home/knknkn/.config/nvim'
+let g:netrw_dirhist_9='/home/knknkn/.config'
+let g:netrw_dirhist_8='/home/knknkn'
+let g:netrw_dirhist_7='/home/knknkn/.config/nvim/rc'
+let g:netrw_dirhist_6='/home/knknkn/.config/nvim'
+let g:netrw_dirhist_5='/home/knknkn/.config'
+let g:netrw_dirhist_4='/home/knknkn'
+let g:netrw_dirhist_3='/home/knknkn/.config/nvim/rc'
+let g:netrw_dirhist_2='/home/knknkn/.config/nvim'
