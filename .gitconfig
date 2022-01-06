@@ -1,0 +1,48 @@
+[user]
+	name = knknkn1162
+	email = knknkn1162@gmail.com
+[color]
+  # colorの設定(以下のコマンドは自動で色つける)
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+[push]
+  default = current
+[alias]
+  m = checkout master
+  an = add $1 -N
+  p = add -p
+  pp = add $1 -p
+  st = status
+  com = commit -m
+  amend = commit --amend -m
+  co = checkout
+  br = branch
+  graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+  allgraph = log --graph --stat --all --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+  oneline = log --pretty=oneline --graph
+  master = checkout master; git pull
+  brn = symbolic-ref --short HEAD
+  sub = git rm --cached
+  last = log -1 HEAD
+  rshow = remote show origin
+  df = diff
+  dc = diff --cached
+  dm = diff master           # masterとのdiff
+  d1 = diff HEAD~            # HEADから1つ前とdiff
+  d2 = diff HEAD~~           # HEADから2つ前とdiff
+  d3 = diff HEAD~~~          # HEADから3つ前とdiff
+  d4 = diff HEAD~~~~         # HEADから4つ前とdiff
+  d5 = diff HEAD~~~~~        # HEADから5つ前とdiff
+  d10 = diff HEAD~~~~~~~~~~  # HEADから10前とdiff
+[merge]
+  tool = vimdiff
+[core]
+        quotepath = false
+	autocrlf = input
+[http]
+        sslVerify = false
+[credential]
+        helper = cache
