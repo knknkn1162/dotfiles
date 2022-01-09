@@ -29,3 +29,4 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 eval "$(pyenv init --path)"
+eval $(/mnt/c/Users/knknk/Appdata/ssh-agent-wsl/ssh-agent-wsl -r)
