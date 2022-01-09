@@ -17,7 +17,7 @@ let s:lazy_toml_file = s:toml_dir . '/lazy_dein.toml'
 if dein#min#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
   call dein#load_toml(s:toml_file, {'lazy' : 0})
-  "call dein#load_toml(s:lazy_toml_file, {'lazy' : 1})
+  call dein#load_toml(s:lazy_toml_file, {'lazy' : 1})
   call dein#end()
 
   call dein#save_state()
