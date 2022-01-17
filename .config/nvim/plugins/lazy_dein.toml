@@ -14,6 +14,11 @@ hook_source = '''
 '''
 
 [[plugins]]
+repo = 'PProvost/vim-ps1'
+on_ft = ['ps1']
+on_event = 'BufRead' # see autocmd#autocmd-events-abc
+
+[[plugins]]
 repo = 'Shougo/denite.nvim'
 depends = 'neomru.vim'
 on_event = 'BufRead'
